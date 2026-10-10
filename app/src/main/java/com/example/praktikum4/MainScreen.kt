@@ -42,7 +42,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
             bgColor = colorResource(id = R.color.card_1_bg),
             nama = stringResource(id = R.string.nama_1),
             alamat = stringResource(id = R.string.alamat_1),
-            namaColor = colorResource(id = R.color.text_yellow),
+            namaColor = colorResource(id = R.color.text_white),
             alamatColor = colorResource(id = R.color.text_yellow)
         )
 
@@ -52,8 +52,8 @@ fun MainScreen(modifier: Modifier = Modifier) {
             nama = stringResource(id = R.string.nama_2),
             telepon = stringResource(id = R.string.telp_2),
             alamat = stringResource(id = R.string.alamat_2),
-            namaColor = colorResource(id = R.color.text_yellow),
-            alamatColor = colorResource(id = R.color.text_cyan),
+            namaColor = colorResource(id = R.color.text_white),
+            alamatColor = colorResource(id = R.color.text_yellow),
             teleponColor = colorResource(id = R.color.text_cyan)
         )
 
