@@ -19,24 +19,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.praktikum4.R
 
-@Composable
-fun CardWidget(
-    bgColor: Color,
-    nama: String,
-    telepon: String? = null,
-    alamat: String,
-    namaColor: Color,
-    alamatColor: Color,
-    teleponColor: Color? = null
-) {
-    Card(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 6.dp),
-        colors = CardDefaults.cardColors(containerColor = bgColor)
-    ) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -61,7 +44,7 @@ fun CardWidget(
                     color = namaColor,
                     fontFamily = FontFamily.Cursive
                 )
-                if (telepon != null && teleponColor != null) {
+                if (!telepon.isNullOrEmpty()) {
                     Text(
                         text = telepon,
                         fontSize = 12.sp,
