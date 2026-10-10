@@ -24,11 +24,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
             .padding(top = 40.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(
-            text = stringResource(id = R.string.prodi),
-            fontSize = 24.sp,
-            fontWeight = FontWeight.Bold
-        )
+
         Text(
             text = stringResource(id = R.string.univ),
             fontSize = 14.sp,
