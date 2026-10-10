@@ -2,9 +2,7 @@
 <resources>
     <string name="app_name">QuestTugasLayout</string>
     <string name="prodi">Teknologi Informasi</string>
-
-    <string name="nama_1">M Wafa Rozanu</string>
-    <string name="alamat_1">Wates, Kulon Progo</string>
+    <string name="univ">Universitas Muhammadiyah Yogyakarta</string>
 
     <string name="nama_2">Gibran Fathoni</string>
     <string name="telp_2">085436374190</string>
