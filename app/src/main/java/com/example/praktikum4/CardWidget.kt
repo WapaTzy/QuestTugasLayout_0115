@@ -43,6 +43,11 @@ fun CardWidget(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy),
+                contentDescription = null,
+                modifier = Modifier.size(45.dp)
+            )
 
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
