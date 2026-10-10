@@ -20,13 +20,23 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(12.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.SpaceBetween
-        ) {
+@Composable
+fun CardWidget(
+    bgColor: Color,
+    nama: String,
+    telepon: String? = null,
+    alamat: String,
+    namaColor: Color,
+    alamatColor: Color,
+    teleponColor: Color = Color.Unspecified
+) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp, vertical = 6.dp),
+        colors = CardDefaults.cardColors(containerColor = bgColor)
+    ) {
+
             Image(
                 painter = painterResource(id = R.drawable.logo_umy),
                 contentDescription = null,
