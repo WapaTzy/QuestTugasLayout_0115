@@ -43,11 +43,32 @@ fun CardWidget(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            Image(
-                painter = painterResource(id = R.drawable.logo_umy),
-                contentDescription = null,
-                modifier = Modifier.size(45.dp)
-            )
+
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier.weight(1f)
+            ) {
+                Text(
+                    text = nama,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = namaColor,
+                    fontFamily = FontFamily.Cursive
+                )
+                if (!telepon.isNullOrEmpty()) {
+                    Text(
+                        text = telepon,
+                        fontSize = 12.sp,
+                        color = teleponColor
+                    )
+                }
+                Text(
+                    text = alamat,
+                    fontSize = 12.sp,
+                    color = alamatColor,
+                    fontWeight = FontWeight.SemiBold
+                )
+            }
 
             Image(
                 painter = painterResource(id = R.drawable.logo_umy),
